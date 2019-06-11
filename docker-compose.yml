@@ -4,5 +4,5 @@ services:
    image: paperist/alpine-texlive-ja
    container_name: tex
    tty: true
-   volumes:
+volumes:
 - ./:/workdir
