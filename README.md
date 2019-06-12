@@ -14,5 +14,5 @@ Dockerで生存研発表予稿をローカル環境に囚われずDockerで作�
 ## Usage
 
 ```bash
-
+$ docker run --rm -it -v $PWD:/workdir paperist/alpine-texlive-ja
 ```
