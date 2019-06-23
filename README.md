@@ -1,18 +1,20 @@
 # RISHtexTemp
 ## 生存圏研究所B4/M2中間・目次発表予稿テンプレ
-Dockerで生存研発表予稿をローカル環境に囚われずDockerで作るための説明書
-## Table of Contents
-- [Install](#install)
-- [Usage](#usage)
+生存研発表予稿をTeXで作るためのテンプレート
+## 同梱ファイル
+必須
+`abst5lab.cls`
+書式設定
+弄る必要ないです
+`RISHTemplate1.tex`
+タイトル、本文など。
+ファイル名は変更してから書き始めたほうが良いでしょう。
+自分の名前を入れたりすることが多いようです。
+末尾の数字を変えていくことで、簡易なバージョン管理にすることもあるようです。
+例：先生に見てもらった後の修正の前に「RISHTemplate1.tex」を「RISHTemplate2.tex」にコピーして「RISHTemplate2.tex」を新たに修正していく。
+「RISHTemplate2.tex」でいつの間にか変なミスをしていても、「RISHTemplate1.tex」を参考に直せたりなど。
+**git使える人はなるべくgitでバージョン管理する癖をつけておいたほうが無難です・・・**
+### オプション
+figフォルダ
+使用する画像ファイル(epsファイル)はここに入れると少しフォルダがスッキリします。
 
-## Install
-
-```bash
-
-```
-
-## Usage
-
-```bash
-$ docker run --rm -it -v $PWD:/workdir paperist/alpine-texlive-ja
-```
