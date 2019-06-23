@@ -1,5 +1,7 @@
 #!/usr/bin/env perl
-$latex            = 'platex -halt-on-error -file-line-error %O %S';
+
+# Change "。" and "、" to ". " and ", "
+$latex = "find . -type f -name '*.tex' | xargs sed -i '' -e 's/、/，/g' -e 's/。/．/g'; uplatex -synctex=1 -halt-on-error %O %S";
 $out_dir          = '.tmp';
 $bibtex           = 'pbibtex';
 $dvipdf           = 'dvipdfmx %O -o %D %S';
