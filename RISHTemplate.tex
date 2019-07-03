@@ -1,19 +1,18 @@
-\documentclass[11pt]{abst5lab}
+\documentclass[11pt,dvipdfmx]{abst5lab}
 \pagestyle{empty}
 \usepackage{graphicx}
+\usepackage{color}
 \usepackage{fancyhdr}
 \usepackage{amssymb}
-\usepackage{float}
 \usepackage{amsmath}
 \usepackage{array}
 \usepackage{tikz}
 % \usepackage[version=3]{mhchem}
 \usepackage{amsfonts}
-\usepackage{graphicx}
 \usepackage{bm}
+\usepackage{here} % 図や表の位置を固定
 
-
-\title{タイトル}
+\title{テスト}
 \etitle{TITLE}
 \author{六車光貴}
 \affil{京都大学生存圏研究所 橋口研究室}
@@ -39,8 +38,6 @@
 
 \section{（仮）原理}
 
-
-
 「内容」
 
 
@@ -51,6 +48,15 @@
 \section{結果}
 「内容」
 
+図\ref{im:apple}にりんごの画像を示した．
+画像は.png，.jpg，.pdfに対応している．
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=5cm]{fig/apple.jpg}
+  \caption{林檎の図}
+  \label{im:apple}
+\end{figure}
 
 \section{まとめと今後の課題}
 
